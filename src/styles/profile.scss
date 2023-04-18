@@ -1,0 +1,27 @@
+@import "var";
+
+.profile{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 7rem;
+  padding: 5rem;
+  border: 1px solid $navBg;
+  border-radius: 10px;
+  button{
+    margin-top: 3rem;
+    font-size: 15px;
+    margin-left: 5px;
+    padding: 1rem 2rem;
+    background-color: $btnColor;
+  }
+  button:hover{
+    color: $mainColor;
+    background-color: lighten($btnColor, 5%);
+    cursor: pointer;
+  }
+  input{
+    border: 1px solid $navBg;
+    background-color: lighten($navBg, 5%);
+  }
+}

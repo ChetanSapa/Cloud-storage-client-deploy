@@ -1,0 +1,19 @@
+$font: 'Georgia', serif;
+$fileFont: 'Georgia', serif;
+$mainFont: 'Georgia', serif;
+$mainColor: #fefbe9;
+$textColor: #183a1d;
+$navBg: #e1eebb;
+$btnColor: #f0a04b;
+//$listImg: '../assets/list.svg';
+//$plateImg: '../assets/plate.svg';
+
+
+@keyframes onLoad {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100%;
+  }
+}

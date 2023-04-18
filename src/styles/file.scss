@@ -1,0 +1,171 @@
+@import 'var';
+
+.file {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin: 5px;
+  font-size: 15px;
+  animation-name: onLoad;
+  animation-duration: .5s;
+
+  .file-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 20%;
+    padding: 10px;
+    background-color: $navBg;
+
+    .file-title-name-dir {
+      padding-left: 2%;
+      background-color: $navBg;
+      cursor: pointer;
+
+      &:hover {
+        //font-weight: bolder;
+        color: lighten(black, 50%);
+        background-color: $navBg;
+      }
+    }
+
+    .file-title-name-file {
+      padding-left: 2%;
+      background-color: $navBg;
+      cursor: pointer;
+
+      &:hover {
+        color: lighten(black, 50%);
+      }
+    }
+
+    img {
+      width: 50px;
+      background-color: $navBg;
+      margin-bottom: 4px;
+    }
+    button{
+      display: none;
+    }
+  }
+
+  .func-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 60%;
+    padding: 10px;
+    background-color: $navBg;
+
+    button {
+      display: none;
+    }
+  }
+
+  .file-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 21%;
+    background-color: $navBg;
+
+    .file-info-date {
+      padding-right: 10%;
+      background-color: $navBg;
+    }
+
+    .file-info-size {
+      white-space: nowrap;
+      background-color: $navBg;
+      padding-right: 15px;
+    }
+  }
+}
+.file:hover,{
+  .func-btn{
+    button {
+      display: block;
+      font-size: 15px;
+      margin-left: 5px;
+      padding: 5px 30px;
+    }
+    button:hover{
+      display: block;
+      font-size: 15px;
+      margin-left: 5px;
+      padding: 5px 30px;
+        color: $mainColor;
+    }
+  }
+}
+.file-view-plate{
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  border: 2px solid lighten($textColor, 65%);
+  border-radius: 5px;
+  animation-name: onLoad;
+  animation-duration: .5s;
+  .file-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: $navBg;
+
+    .file-title-name-dir {
+      background-color: $navBg;
+      cursor: pointer;
+
+      &:hover {
+        color: lighten(black, 50%);
+        background-color: $navBg;
+      }
+    }
+
+    .file-title-name-file {
+      padding-left: 2%;
+      background-color: $navBg;
+
+
+      &:hover {
+        color: lighten(black, 50%);
+      }
+    }
+
+    img {
+      width: 100px;
+      background-color: $navBg;
+      margin-bottom: 4px;
+      cursor: pointer;
+    }
+    button{
+      display: none;
+    }
+  }
+
+  .func-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+    background-color: $navBg;
+
+    button {
+      display: block;
+      font-size: 15px;
+      margin-left: 5px;
+      padding: 5px 20px;
+    }
+  }
+    button:hover{
+      display: block;
+      font-size: 15px;
+      margin-left: 5px;
+      padding: 5px 20px;
+      color: $mainColor;
+    }
+
+}

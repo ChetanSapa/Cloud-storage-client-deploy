@@ -1,0 +1,56 @@
+@import "var";
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 3% 0 3% 0;
+  width: 100%;
+  background-color: $navBg;
+  .logo {
+    padding-left: 12.5%;
+    font-size: 34px;
+    font-weight: bold;
+    background-color: $navBg;
+  }
+  .logo_title{
+    background-color: $navBg;
+  }
+}
+
+.navbar_btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-right: 12.5%;
+  background-color: $navBg;
+  .navbar_auth {
+    font-size: 18px;
+    padding-left: 15px;
+    color: $textColor;
+    background-color: $navBg;
+  }
+
+  img{
+    width: 35px;
+    margin-left: 10px;
+    background-color: $navBg;
+  }
+}
+
+.navbar-registration {
+  font-size: 18px;
+  background-color: $navBg;
+}
+.avatar{
+  width: 40px;
+  margin: 0 10px;
+  background-color: $navBg;
+  a{
+    padding: 0;
+    margin: 0;
+  }
+}
+.avatar:hover{
+  background-color: $navBg;
+}

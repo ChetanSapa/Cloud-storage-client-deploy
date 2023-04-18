@@ -1,0 +1,19 @@
+@import 'var';
+
+.file-list{
+  padding: 2% 1%;
+  width: 75%;
+  align-self: center;
+  animation-name: onLoad;
+  animation-duration: .5s;
+}
+.file-plate{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-self: center;
+  padding: 2% 1%;
+  width: 75%;
+  animation-name: onLoad;
+  animation-duration: .5s;
+}

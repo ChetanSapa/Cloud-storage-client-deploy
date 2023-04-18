@@ -1,0 +1,57 @@
+@import "var";
+
+
+.auth-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  margin-top: 2.5%;
+  padding: 5%;
+  border: 2px solid lighten($textColor, 65%);
+  border-radius: 10px;
+}
+
+.auth-card-title {
+  padding-bottom: 7.5%;
+  font-size: 22px;
+  font-weight: bold;
+  color: $textColor;
+}
+
+.input {
+  width: 100%;
+  padding: 1%;
+
+  input {
+    width: 100%;
+    padding: 2%;
+    border: 1px solid lighten($textColor, 65%);
+    border-radius: 10px;
+  }
+}
+
+.auth-card-btns {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 7.5%;
+  width: 100%;
+
+  button {
+    padding: 2.5% 6%;
+  }
+
+  span {
+    font-family: $mainFont;;
+    font-size: 16px;
+    margin: 10px;
+  }
+
+  a {
+    padding: 2.5% 6%;
+    text-decoration: none;
+  }
+}
+
