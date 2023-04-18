@@ -37,11 +37,17 @@ export const auth = (email, password) => {
     return async dispatch => {
         try {
             const response = await axios.get(`${API_URL}api/auth/auth/`,
-                {headers: {Authorization: `Bearer: ${localStorage.getItem('token')}`,CORS: 'Access-Control-Allow-Origin'}}}
+                {
+                    headers: {
+                        Authorization: `Bearer: ${localStorage.getItem('token')}`,
+                        CORS: `Access-Control-Allow-Origin`
+                    }
+                }
             )
             dispatch(setUser(response.data.user))
             localStorage.setItem('token', response.data.token)
-        } catch (e) {
+        } catch
+            (e) {
             console.log(e.response.data.message)
             localStorage.removeItem('token')
         }
