@@ -48,7 +48,7 @@ export const auth = (email, password) => {
             localStorage.setItem('token', response.data.token)
         } catch
             (e) {
-            console.log(e.response.data.message)
+            console.log(e)
             localStorage.removeItem('token')
         }
     }
