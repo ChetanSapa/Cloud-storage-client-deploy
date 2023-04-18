@@ -9,11 +9,11 @@ export const registration = async (email, password) => {
                 password
             },
             {
-                headers: {CORS: 'Access-Control-Allow-Origin'}
+                headers: {Access-Control-Allow-Origin: `*`}
             })
         console.log(response.data.message)
     } catch (e) {
-        console.log(e.response.data.message)
+        console.log(e)
     }
 }
 export const login = (email, password) => {
@@ -24,7 +24,7 @@ export const login = (email, password) => {
                     password
                 },
                 {
-                    headers: {CORS: 'Access-Control-Allow-Origin'}
+                    headers: {Access-Control-Allow-Origin: `*`}
                 })
             dispatch(setUser(response.data.user))
             localStorage.setItem('token', response.data.token)
@@ -40,7 +40,7 @@ export const auth = (email, password) => {
                 {
                     headers: {
                         Authorization: `Bearer: ${localStorage.getItem('token')}`,
-                        CORS: `Access-Control-Allow-Origin`
+                        Access-Control-Allow-Origin: `*`
                     }
                 }
             )
