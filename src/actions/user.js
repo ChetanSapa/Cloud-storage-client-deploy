@@ -8,9 +8,7 @@ export const registration = async (email, password) => {
                 email,
                 password
             },
-            {
-                headers: {Access-Control-Allow-Origin: `*`}
-            })
+    })
         console.log(response.data.message)
     } catch (e) {
         console.log(e)
@@ -23,9 +21,7 @@ export const login = (email, password) => {
                     email,
                     password
                 },
-                {
-                    headers: {Access-Control-Allow-Origin: `*`}
-                })
+        })
             dispatch(setUser(response.data.user))
             localStorage.setItem('token', response.data.token)
         } catch (e) {
@@ -38,10 +34,7 @@ export const auth = (email, password) => {
         try {
             const response = await axios.get(`${API_URL}api/auth/auth/`,
                 {
-                    headers: {
-                        Authorization: `Bearer: ${localStorage.getItem('token')}`,
-                        Access-Control-Allow-Origin: `*`
-                    }
+                    headers: {Authorization: `Bearer: ${localStorage.getItem('token')}`}
                 }
             )
             dispatch(setUser(response.data.user))
