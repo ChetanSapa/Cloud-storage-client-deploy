@@ -1,1 +1,1 @@
-export const API_URL = 'https://cloud-storage-server-deploy.vercel.app/'
+export const API_URL = 'https://cloud-storage-server-deploy.vercel.app'
