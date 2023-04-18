@@ -13,5 +13,5 @@ const rootReducer = combineReducers({
     upload: uploadReducer,
     app: appReducer
 })
-
+//What whith you redux-devtools-extension?
 export const store = createStore(rootReducer, composeWithDevTools(applyMiddleware(thunk)))
